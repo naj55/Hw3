@@ -12,33 +12,31 @@
         animals = [
           "dog",
           "cat",
-          "bat",
-          "cock",
-          "cow",
-          "pig",
-          "fox",
-          "ant",
-          "bird",
-          "lion",
-          "wolf",
-          "deer",
-          "bear",
-          "frog",
-          "hen",
-          "mole",
-          "duck",
-          "goat",
+          // "bat",
+          // "cock",
+          // "cow",
+          // "pig",
+          // "fox",
+          // "ant",
+          // "bird",
+          // "lion",
+          // "wolf",
+          // "deer",
+          // "bear",
+          // "frog",
+          // "hen",
+          // "mole",
+          // "duck",
+          // "goat",
         ];
 
         for (animal of animals) {
           let nameAnimal = prompt("find hide animal in" + mystring);
-          if (nameAnimal === animal) {
-            window.document("Excelent you find " + nameAnimal);
-            // mystring = mystring.replace("nameAnimal", "");
+          if (animal.match(nameAnimal)) {
+            window.document.write(nameAnimal);
             return;
-            //   } else {
-            //     console.log("try again");
-            //   }
+          } else {
+            window.document.write("cant find");
           }
         }
       };
