@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let findHiddenAnimal = (mystring) => {
+        animals = [
+          "dog",
+          "cat",
+          "bat",
+          "cock",
+          "cow",
+          "pig",
+          "fox",
+          "ant",
+          "bird",
+          "lion",
+          "wolf",
+          "deer",
+          "bear",
+          "frog",
+          "hen",
+          "mole",
+          "duck",
+          "goat",
+        ];
+
+        for (animal of animals) {
+          let nameAnimal = prompt("find hide animal in" + mystring);
+          if (nameAnimal === animal) {
+            window.document("Excelent you find " + nameAnimal);
+            // mystring = mystring.replace("nameAnimal", "");
+            return;
+            //   } else {
+            //     console.log("try again");
+            //   }
+          }
+        }
+      };
+      findHiddenAnimal("goatcode");
+    </script>
+  </body>
+</html>

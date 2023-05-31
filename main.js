@@ -151,8 +151,61 @@ let currentDate = (sp) => {
   }
   return mm + sp + dd + sp + yyyy;
 };
-console.log(currentDate("/"));
 
+////////////////////////////////////////////////////////////////
+//Q16
+let getDeffirenceBwtweenDate = (date1, date2) => {
+  // To calculate the time difference of two dates
+  let Difference_In_Time = date2.getTime() - date1.getTime();
+
+  // To calculate the no. of days between two dates
+  let Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
+
+  //To display the final no. of days (result)
+  console.log("Total number of days is " + Difference_In_Days);
+};
+//Q17 find hidden animal
+let findHiddenAnimal = (mystring) => {
+  animals = [
+    "dog",
+    "cat",
+    "bat",
+    "cock",
+    "cow",
+    "pig",
+    "fox",
+    "ant",
+    "bird",
+    "lion",
+    "wolf",
+    "deer",
+    "bear",
+    "frog",
+    "hen",
+    "mole",
+    "duck",
+    "goat",
+  ];
+
+  for (animal of animals) {
+    let nameAnimal = prompt("find hide animal in" + mystring);
+    if (nameAnimal == animal) {
+      console.log("Excelent you find " + nameAnimal);
+      mystring = mystring.replace("nameAnimal", "");
+    } else {
+      console.log("try again");
+    }
+  }
+};
+
+//Q18 larger number
+let comparNum = (num1, num2) => {
+  if (num1 < num2) {
+    console.log(num2);
+  } else {
+    console.log(num1);
+  }
+};
 ///reverse("98765");
 //upperCase("najla mohammad");
 //numberOfVowels("nauyijla");
@@ -171,3 +224,8 @@ console.log(currentDate("/"));
 // ObjectToArray(fullName);
 //possiblePath(9);
 //CheckIdenticalLetters("tool");
+///console.log(currentDate("/"));
+//getDeffirenceBwtweenDate(new Date("June 14, 2019"), new Date("June 20, 2019"));
+//comparNum(50, 20);
+
+findHiddenAnimal("goatcode");
